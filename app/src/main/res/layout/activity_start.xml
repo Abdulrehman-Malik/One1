@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_color"
+    tools:context=".views.start">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/back_color"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="50dp">
+        <ImageView
+            android:id="@+id/detailActivityShoeIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/checkout" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvShowProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/comp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Show Products"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/detailActivityShoeIV"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"
+            android:padding="25dp"
+            app:srcCompat="@drawable/cart" />
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Refresh Data"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/detailActivityShoeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:padding="25dp"
+                app:srcCompat="@drawable/cart" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Account"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/detailActivityShoeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:padding="25dp"
+                app:srcCompat="@drawable/cart" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Contact US"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/detailActivityShoeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:padding="25dp"
+                app:srcCompat="@drawable/cart" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

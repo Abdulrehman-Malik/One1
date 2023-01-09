@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eachShoeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginVertical="3dp"
+    android:layout_marginEnd="3dp">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            >
+
+        <ImageView
+            android:id="@+id/eachShoeIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/eachShoeName"
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+    <TextView
+            android:id="@+id/eachShoeBrandNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Packing"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/eachShoePriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+            <ImageView
+                android:id="@+id/eachShoeAddToCartBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:tooltipText="Add"
+                android:baselineAlignBottom="true"
+                app:srcCompat="@drawable/add_to_cart" />
+</LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
