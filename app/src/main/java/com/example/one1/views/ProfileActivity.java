@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,8 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         initializeVariables();
         //profile = getIntent().getParcelableExtra("profile");
-        setDataToWidgets();
+        (new Handler()).postDelayed(this::setDataToWidgets, 5000);
+        //setDataToWidgets();
 
     }
 
@@ -72,7 +74,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
     }
     private void getDataFromWidgets() {
-        profile.setName(txtName.getText().toString()); ;
+        profile.setName(txtName.getText().toString());
         profile.setAddress(txtAddress.getText().toString());
         profile.setPhone(txtPhone.getText().toString());
         profile.setCity(txtCity.getText().toString());
